@@ -1,0 +1,292 @@
+body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #fdfbf7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        header {
+            height: 30vh;
+            padding-top: 300px;
+            background-image: url('1.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+     
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        nav {
+            padding: 15px;
+            background: rgba(37, 37, 37, 0.85);
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #ff9900;
+        }
+
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .info h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #e25c1d; 
+        }
+
+        .info p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .info-text {
+            width: 50%;
+        }
+
+        .info-img {
+            width: 40%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+        .catalog {
+            padding: 40px 20px;
+            background: #f7f7f7;
+        }
+
+        .catalog h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .all-divs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .catalog-div {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .catalog-img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .catalog-div h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .catalog-text {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .sallary {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e25c1d;
+        }
+
+        .recall {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .recall h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .recall-div {
+            display: flex;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .recall-img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .recall-text h3 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            color: #e25c1d;
+        }
+
+        .recall-text p {
+            margin: 0;
+            font-size: 15px;
+            color: #444;
+            text-align: justify;
+        }
+
+
+        .contacts {
+            padding: 40px 20px;
+            background: #f7f7f7;
+        }
+
+        .contacts h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .map {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .map iframe {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .contacts-div h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contacts-div p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .contacts-row-1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .phone {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .phone-namber {
+            font-size: 14px;
+            color: #aaa;
+            margin: 0;
+        }
+
+        .phone p {
+            font-size: 18px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .image-left p {
+            margin: 0;
+            font-size: 16px;
+            color: #eee;
+            word-spacing: 15px;
+        }
+
+       
+        @media (max-width: 768px) {
+            header {
+                padding-top: 80px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info-text, .info-img {
+                width: 100%;
+            }
+
+            .recall-div {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .recall-text p {
+                text-align: center;
+            }
+
+            .catalog-div {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .map iframe {
+                height: 300px;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
